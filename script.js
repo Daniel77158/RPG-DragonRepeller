@@ -19,6 +19,10 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 
 // Botões de inicialização 
 
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+
 function goStore() {
     console.log("Going to store.");
   }
