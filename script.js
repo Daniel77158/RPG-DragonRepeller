@@ -221,7 +221,7 @@ function isMonsterHit() {
 }
 
 function dodge() {
-  text.innerText = "You dodge the attack from the " + monsters[fighting].name;
+  text.innerText = "You dodge the attack from the " + monsters[fighting].name; //monsters[fighting].name (essa parte do código puxa o nome do monstro atual que está lutando.)
 }
 
 function defeatMonster() {
@@ -267,7 +267,7 @@ function pickEight() {
 function pick(guess) {
   const numbers = [];
   while (numbers.length < 10) {
-    numbers.push(Math.floor(Math.random() * 11));
+    numbers.push(Math.floor(Math.random() * 11)); //O Objeto Math juntamente com o metodo random, faz com que ele arredonde para o numero mais proximo.
   }
   text.innerText = "You picked " + guess + ". Here are the random numbers:\n";
   for (let i = 0; i < 10; i++) {
